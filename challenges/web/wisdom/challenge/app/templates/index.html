@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Wisdom</title>
+<style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+		box-sizing: border-box;
+	}
+	body{
+		font-family: sans-serif;
+		padding-top: 150px;
+        background-color: #1f1f1f;
+	}
+	.main{
+		margin: auto;
+		width: 50%;
+	}
+	.main input,button{
+		width:75%;
+		border:2px solid rgb(255, 255, 255);
+		border-right:0px;
+		font-size: 18px;
+		padding:12px;
+		background-color: transparent;
+		color:rgb(255, 255, 255);
+	}
+    .main h1{
+        text-align: center;
+        margin-bottom: 50px;
+        color: #cecece;
+    }
+	.main input:hover{
+		opacity: .8;
+	}
+	.main button{
+		width:25%;
+		background-color: #121212;
+		color:rgb(255, 255, 255);
+		transition: all 0.3s;
+		float: right;
+		border-left:0px;
+	}
+	.main button:hover{
+		opacity: .8;
+	}
+    .main p{
+        text-align: center;
+        color: #cecece;
+    }
+</style>
+</head>
+<body>
+	<div class="main">
+        <h1>Wisdom</h1>
+        <form action="/submit">
+            <center><button style="float: none; margin-bottom: 50px;">Found a bug?</button></center>
+        </form>
+        <form>
+            <input type="text" name="q" placeholder="Search for a quote...">
+            <button>Search</button>
+        </form>
+        <br>
+        {% if quotes is defined %}
+        {% for quote in quotes %}
+        <p>“{{ quote[1]|safe }}” - {{ quote[0]|safe }}</p><br>
+        {% endfor %}
+        {% endif %}
+	</div>
+</body>
+</html>

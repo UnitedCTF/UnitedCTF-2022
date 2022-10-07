@@ -1,0 +1,30 @@
+name: "PHPwn"
+author: "hfz"
+
+category: web
+
+difficulty: medium
+
+description: |
+  > ![dawg](https://i.imgflip.com/6p4kr7.jpg)
+
+  > PS: Your goal is to execute `/flag` to print the flag.
+
+  **`Author:`** hfz
+
+flags:
+  - FLAG-798fc96f7f917fb6f398214bf5d59552b6823c16f6b89675
+
+connection_info: https://phpwn.ctf.unitedctf.ca
+
+tags:
+  - pwn
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 50
+state: hidden
+version: "0.1"

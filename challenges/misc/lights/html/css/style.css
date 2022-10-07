@@ -1,0 +1,16 @@
+html { 
+  background: url('../img/background.jpg') no-repeat center center fixed; 
+  background-size: cover;
+}
+
+body {
+  text-align: center;
+  margin: auto
+}
+
+.text {
+    font-family: "Courier";
+    font-size: 20px;
+    color: #c0c0c0;
+    margin-top: 10px;
+}

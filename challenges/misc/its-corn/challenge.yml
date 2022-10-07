@@ -1,0 +1,47 @@
+name: "It's corn !"
+author: "Granny"
+
+# Challenge category, can be one of: web, crypto, pwn, reverse, jail, misc, forensics
+category: misc
+
+# Challenge difficulty, can be one of: baby, easy, medium, hard
+difficulty: easy
+
+# Challenge description goes here (you can use markdown).
+# Notes:
+# - for multi-line descriptions, make sure to add 2 spaces at the end of each line so that descriptions are actually displayed in multiple lines;
+# - make sure to prepend the description with ">";
+# - make sure to add the last line (author's name) so people can refer to you in case of a technical problem.
+description: |
+  > Connaissez-vous le *corn kid* ? Voici le lien pour le rencontrer:
+  > https://www.youtube.com/watch?v=1VbZE6YhjKk
+  >
+  > Il adorerait se promener dans un labyrinthe de maïs, mais il est trop occupé à manger ce délicieux aliment. Aide-le en lui indiquant le plus court chemin à parcourir.
+  >
+  > Envoie les coordonnées qu'il devra faire à chaque pas à partir du début ***S*** jusqu'à la fin ***E***, sans inclure leurs coordonnées. Lorsque c'est terminé, envoie un `.`.
+  > *I hope you guys have a cornstastic day !*
+
+  **`Author:`** Granny
+
+flags:
+  - FLAG-SSBob3BlIHlvdSBndXlzIGhhdmUgYSBjb3JudGFzdGljIGRheSAh
+
+connection_info: nc --ssl ctf.unitedctf.ca 1337
+
+tags:
+  - sandbox
+
+# Files to be uploaded alongside the challenge in CTFd
+# These paths are relative to the same directory where the challenge.yml file is.
+files:
+  - src/rome_roads.py
+
+# Leave this as is.
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 50
+state: hidden
+version: "0.1"

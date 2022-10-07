@@ -1,0 +1,22 @@
+extends layout
+block content
+  div(style="float:left;width:80%")
+    h1.my-3 #{recette.titre}
+
+    p Numéro de la recette : #{recette.id}
+    
+    p.mb-0 Liste des ingrédients :
+
+    ul
+      each x in recette.lstIngredient
+        li #{x}
+
+    p 
+      | La 
+      a(href=recette.source target="_blank") source
+      |
+      | original de cette connaissance
+  
+  div(style="float:right;width:20%;")
+    image(src=recette.image style="max-width:300px")
+  

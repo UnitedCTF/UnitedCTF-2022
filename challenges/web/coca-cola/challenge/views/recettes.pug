@@ -1,0 +1,11 @@
+extends layout
+block content
+  h1= title
+
+  if (lstRecette)
+  ul
+    each x in lstRecette
+      li
+       a(href="/recette/"+x.id) #{x.titre}
+
+  image(style="max-width:100%" src="https://fr.coca-cola.ca/content/dam/journey/ca/fr/private/our-company/About%20Our%20Company%20Header.png")

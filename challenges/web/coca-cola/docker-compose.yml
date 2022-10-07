@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+    app:
+        container_name: coca-cola
+        image: coca-cola
+        restart: always
+        build:
+            context: .
+            dockerfile: Dockerfile
+            target: base
+        ports:
+            - "3000:3000" 

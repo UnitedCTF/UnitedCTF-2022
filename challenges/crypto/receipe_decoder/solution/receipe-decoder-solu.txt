@@ -1,0 +1,17 @@
+--------------------- Challenge 1:
+D'abord mettre le chocolat
+Monter les blancs avec amour
+Ajouter la neige au chocolat fondu
+N'oublie pas la pincée de sel
+Et tu obtiens une mousse au chocolat
+
+
+FLAG-SPONG-ENCODE
+
+
+to charcode
+to decimal
+to hex
+URL Encode
+to base64
+

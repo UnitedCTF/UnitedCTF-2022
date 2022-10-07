@@ -1,0 +1,7 @@
+__pycache__
+/docker-compose.yml
+/home
+/id_ed25519*
+/maze.txt
+
+/*.data

@@ -1,0 +1,4 @@
+# FLAG-f0R-hum4n-0n1y
+
+User-agent: *
+Disallow: /
